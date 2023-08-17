@@ -18,9 +18,34 @@ public class Clase1{
             for( var cont = 0 ; cont < 7 ; cont++) {
                 System.out.println(" cont = " + cont);
             }
+            // Palabra break
+            for( var cont = 0 ; cont < 7 ; cont++){
+                if(cont % 2 == 0){
+                System.out.println(" cont = " + cont);
+                break;
+                }
+            }
+             
+            // para saltar numeros impares..
 
+            for( var cont = 0 ; cont < 7 ; cont++){
+                if(cont % 2 != 0){
+                    continue; // pasa a la siguiente iteracion, cuando encuentra un numero impar e imprime el par
+                }
+                System.out.println(" cont = " + cont);
+            }
 
+            // uso de etiquetas (LABELS). Nos sirve para indicar a las palabras continue y break ir hacia un punto
+            // especifico del programa.
 
+            // Uso de la palabra break y continue junto a las etiquetas
+            inicio:
+            for (var cont1 = 0 ; cont1 < 7 ; cont1++){
+                if (cont1 % 2 != 0) {
+                    continue inicio; // pasa a la sgte iteracion
+                }
+                System.out.println(" cont1 = " + cont1);
+            }
 
 
 
