@@ -1,4 +1,4 @@
-package JavaSCuatri.Leccion2;
+package Leccion2;
 public class Clase1{
     public static void main(String[] args) {
         var conteo = 0; // inf de tipo
@@ -46,6 +46,9 @@ public class Clase1{
                 }
                 System.out.println(" cont1 = " + cont1);
             }
+            
+
+
 
 
 
