@@ -18,3 +18,11 @@ print(len(diccionario))
 
 # como acceder al diccionario con la llave (key)
 print(diccionario["IDE"])
+
+# otra forma de recuperar un elemento 
+print(diccionario.get("POO"))
+print(diccionario.get("SABD"))
+
+# modificar un elemento 
+diccionario["IDE"] = " Entorno de Desarrollo Integrado"
+print(diccionario)
