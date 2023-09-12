@@ -6,7 +6,7 @@ lista = (range(1,11))
 print("Lista original")
 
 for i in lista:
-    print(i, end= "-")
+    print(i, end="-")
 
 valor = int(input("\nEscriba un valor para multiplicarlo: "))
 
