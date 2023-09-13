@@ -2,8 +2,8 @@ package Clase4Completa.Leccion4.Aritmetica;
 
 public class Operaciones { // pascalcase para clases
     // Atributos de la clase
-    int a;
-    int b;
+    public int a;
+    public int b;
 
     // Metodo
     public void sumaNum(){ // camelcase para metodos/atributos
