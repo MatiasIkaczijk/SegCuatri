@@ -21,4 +21,3 @@ var objeto = {
     tel : "262587111"
 }
 console.log(objeto);
-
