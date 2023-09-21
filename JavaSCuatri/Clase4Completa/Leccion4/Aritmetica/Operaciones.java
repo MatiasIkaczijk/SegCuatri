@@ -5,6 +5,21 @@ public class Operaciones { // pascalcase para clases
     public int a;
     public int b;
 
+    // --- MODIFICACIONES CLASE 6 ---
+
+    // El constructor es un metodo especial. 3 objetivos:
+    // contruye un objeto, reserva espacio de memo, inicia los atrib de la clase 
+   
+    public Operaciones(){    // constructor 1 vacio
+        System.out.println("Se está ejecutando el constructor 1..");
+    }
+
+    public Operaciones(int a, int b){
+        this.a = a;
+        this.b = b;
+        System.out.println("Se está ejecutando el constructor 2");
+    }
+
     // Metodo
     public void sumaNum(){ // camelcase para metodos/atributos
         // cuerpo de la clase. Var locales
