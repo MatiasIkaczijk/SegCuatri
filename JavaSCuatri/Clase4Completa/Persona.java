@@ -9,8 +9,8 @@ public class Persona {
 
     // ((Las caract son los atributos)) Atributos de la clase
 
-    String nombres; // puede recibir valores(argumento) o regresar (valor de retorno)
-    String apellidos;
+    public String nombres; // puede recibir valores(argumento) o regresar (valor de retorno)
+    public String apellidos;
 
     // Métodos de la clase (acciones)
 
