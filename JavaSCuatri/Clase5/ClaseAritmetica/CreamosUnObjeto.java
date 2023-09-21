@@ -6,13 +6,15 @@ public class CreamosUnObjeto {
        
     public static void main(String[] args) {
         int a = 7;
-        int b = 3;
+        int b = 3; // var local <-- memoria stack
         miMetodo(); // llamamos el metodo nuevo 
 
         Operaciones aritmetica1 = new Operaciones(); // llamamos al intructor
         aritmetica1.a = 3;
         aritmetica1.b = 7;
         aritmetica1.sumaNum();
+
+        // Para almacenar un objeto u atributo, se utiliza memoria heap
 
         int resultado = aritmetica1.sumarConRetorno();
         System.out.println("Resultado: " + resultado);

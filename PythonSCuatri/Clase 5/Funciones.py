@@ -4,5 +4,5 @@
 def mi_funcion(): #Se define la funcion
       print("Saludos")
       print("¿Cómo estan hoy?")
-
+      
 mi_funcion() #Llamamos  a la funcion
