@@ -29,6 +29,12 @@ public class CreamosUnObjeto {
         Operaciones aritmetica2 = new Operaciones(5,8);
         System.out.println("aritmetica2 = " + aritmetica2.a);
         System.out.println("aritmetica2 = " + aritmetica2.b);
+
+        // aritmetica1 = null, nunca usar esto
+        Persona persona = new Persona("Matias", "Ikaczijk");
+        System.out.println("persona = " + persona);
+        System.out.println("Persona nombre = " + persona.nombre);
+        System.out.println("Persona apellido = " + persona.apellido);
     }
 
     // MOD CLASE 6. MODULARIDAD 
@@ -36,5 +42,19 @@ public class CreamosUnObjeto {
     public static void miMetodo(){
         // int a = 10;
         System.out.println("Aquí hay otro metodo");
+    }
+}
+
+// creamos una clase dentro de otra.. No podrá ser publica
+
+// default o package
+class Persona{
+    // pondremos atributos..
+    String nombre;
+    String apellido;
+
+    Persona(String nombre, String apellido){
+        this.nombre = nombre;
+        this.apellido = apellido; // constructor q apunta a los atributos
     }
 }
