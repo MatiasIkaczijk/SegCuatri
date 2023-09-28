@@ -3,7 +3,6 @@ package Clase5.ClaseAritmetica;
 import Clase4Completa.Leccion4.Aritmetica.Operaciones;
 
 public class CreamosUnObjeto {
-       
     public static void main(String[] args) {
         int a = 7;
         int b = 3; // var local <-- memoria stack
@@ -43,18 +42,33 @@ public class CreamosUnObjeto {
         // int a = 10;
         System.out.println("Aquí hay otro metodo");
     }
+
 }
-
 // creamos una clase dentro de otra.. No podrá ser publica
+// default o package. NUEVA CLASE:
 
-// default o package
 class Persona{
     // pondremos atributos..
     String nombre;
     String apellido;
 
     Persona(String nombre, String apellido){
+        super(); // metodo constructor de la clase Padre object
+        new Imprimir().imprimir(this); 
         this.nombre = nombre;
         this.apellido = apellido; // constructor q apunta a los atributos
+        System.out.println("Objeto persona usando this: " + this); //muestra ek num de referencia de la memoria
+    }
+}
+class Imprimir{
+    public Imprimir(){
+        super(); // constructor de la clase padre, para reservar memoria
+    }
+
+    // metodo dentro de la clase..
+
+    public void imprimir(Persona persona){
+        System.out.println("Persona desde la clase imprimir: " + persona);
+        System.out.println("Impresion del objeto actual (this) : " + this);
     }
 }
