@@ -1,4 +1,4 @@
-package Clase7POO.Encapsulamiento;
+package Encapsulamiento;
 // dominio
 
 // PARTE 1 ENCAPSULAMIENTO

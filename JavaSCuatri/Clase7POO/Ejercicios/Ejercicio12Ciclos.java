@@ -1,4 +1,4 @@
-package Clase7POO.Ejercicios;
+package Ejercicios;
 
 // Pedir un numero y calcular su factorial.
 // Hacerlo en Scanner y JOPtion

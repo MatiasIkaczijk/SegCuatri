@@ -1,4 +1,4 @@
-package Clase7POO.Ejercicios;
+package Ejercicios;
 
 import javax.swing.JOptionPane;
 
