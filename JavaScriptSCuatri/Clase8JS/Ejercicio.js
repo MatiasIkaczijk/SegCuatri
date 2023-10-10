@@ -44,13 +44,13 @@ console.log(edad);
 */
 
 function saludar2(){
-    var nombre3 = "Osvaldo";
+    let nombre3 = "Osvaldo";
     console.log(nombre3);
 }
 // console.log(nombre3); // no lee el dato en la funcion
 
 if(true){
-    var edad3 = 82;
+    let edad3 = 82;
     console.log(edad3);
 }
 console.log(edad3); // en la estructura if falla la var
@@ -58,5 +58,5 @@ console.log(edad3); // en la estructura if falla la var
 // const se usa para valores que no pueden ser reasignados
 const fechaNac = 2006;
 console.log(fechaNac);
-fechaNac = 2001;
-console.log(fechaNac);
+// fechaNac = 2001;
+// console.log(fechaNac);
