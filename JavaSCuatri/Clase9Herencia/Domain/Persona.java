@@ -3,7 +3,7 @@ package Clase9Herencia.Domain;
 public class Persona {
     // atributos de herencia 
     protected  String nombre; // pensado para el concepto de herencia
-    protected char genero;
+    protected static char genero;
     protected int edad; // por default es 0
     protected String direccion; //null porq no tiene un valor asignado
 
