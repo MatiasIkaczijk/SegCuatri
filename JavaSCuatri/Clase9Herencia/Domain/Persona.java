@@ -4,8 +4,8 @@ public class Persona {
     // atributos de herencia 
     protected  String nombre; // pensado para el concepto de herencia
     protected char genero;
-    protected int edad;
-    protected String direccion;
+    protected int edad; // por default es 0
+    protected String direccion; //null porq no tiene un valor asignado
 
     // Cosntructor vacio: es para crear objetos sin necesidad de inicializar los atributos de la clase
     public Persona(){ // constructor 1
@@ -53,6 +53,6 @@ public class Persona {
     // Metodo toString
     @Override // sobreescribimos el metodo toString
     public String toString(){ // CLase padre
-        return "Persona {" + "nombre= "  + nombre + ", genero=" + genero + ", edad= " + edad + " }";
+        return "Persona {" + "nombre= "  + nombre + ", genero=" + genero + ", edad= " + edad + ", direccion= "+ direccion + "}";
     }
 }
