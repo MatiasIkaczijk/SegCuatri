@@ -13,6 +13,8 @@ public class TestHerencia {
         Empleado empleado1 = new Empleado("Matias", 58000.0);
         System.out.println("Empleado1 = " + empleado1);
 
+        Date fecha1 = new Date();
+
         // por cada nuevo atributo, hay un nuevo valor
 
         Cliente cliente1 = new Cliente(new Date(), true, "Jose Flores", "Masc", 33, "Av Alvear O");
