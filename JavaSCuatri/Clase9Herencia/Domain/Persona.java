@@ -51,8 +51,15 @@ public class Persona {
     }
 
     // Metodo toString
-    @Override // sobreescribimos el metodo toString
-    public String toString(){ // CLase padre
-        return "Persona {" + "nombre= "  + nombre + ", genero=" + genero + ", edad= " + edad + ", direccion= "+ direccion + "}";
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder(); // clase
+        sb.append("Persona (nombre=").append(nombre); //llama y agrega atributos
+        sb.append(", genero=").append(genero);
+        sb.append(", edad=").append(edad); //mostraria todos los datos
+        sb.append(", direccion=").append(direccion);
+        sb.append(", ").append(super.toString()); //muestra espacio en memoria
+        sb.append(")");
+        return sb.toString();
     }
 }
