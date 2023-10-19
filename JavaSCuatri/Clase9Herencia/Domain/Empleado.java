@@ -6,9 +6,14 @@ public class Empleado extends Persona { // empleado es herencia de la class pers
     private static int contadorEmpleados;
    
     // constructor
-    public Empleado(String nombre, double sueldo){
-        super(nombre);
-        this.idEmpleado = ++Empleado.contadorEmpleados;
+    public Empleado(){ //constructor 1
+        this.idEmpleado = ++Empleado.contadorEmpleados; // genera el incremento de objetos
+    }
+
+    public Empleado(String nombre, double sueldo){ // constructor 2
+        //super(nombre);
+        this(); // lamada a un constructor interno, vacio
+        this.nombre = nombre;
         this.sueldo = sueldo;
     }
 
