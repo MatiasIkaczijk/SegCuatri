@@ -34,7 +34,7 @@ class Persona3:
         self.nombre = nombre
         self.apellido = apellido # variables
         self.edad = edad
-    def mostrar_detalle(self):
+    def mostrar_detalle(self): #self = this 
         print(f" Persona: {self.nombre}{self.apellido} {self.edad}")
 
 persona3 = Persona3("Jose", "Casti", "45")
@@ -51,5 +51,14 @@ print(f"El objeto3 de la clase persona, modificado es: {persona3.nombre} {person
 
 # METODOS DE INSTANCIA:
  # METODO (asociado a una clase) = FUNCION (depende de si misma)
-persona1.mostrar_detalle()
+persona1.mostrar_detalle() # la ref se pasa de manera automatica
 persona3.mostrar_detalle()
+
+# Persona.mostrar_detalle(persona3) # pasamos de manera manual la referencia
+
+
+# Clase 9 part 2.2
+
+# Podemos agregar atributos a los objetos, es un atributo superficial 
+persona1.telefono = "45688945"
+print(f"El celular de {persona1.nombre} es = {persona1.telefono} ")
