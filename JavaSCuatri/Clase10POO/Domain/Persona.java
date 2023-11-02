@@ -5,6 +5,9 @@ public  class Persona {
     public final static int CONSTANTE_AQUI = 15;
     private String nombre;
     
+    public Persona(String string) {
+    }
+
     public String getNombre() {
         return nombre;
     }

@@ -2,7 +2,7 @@ package Clase11Arreglos.domain;
 
 public class Persona {
     // Arreglos de tipo object
-    private String nombre;
+    public String nombre;
 
     public Persona(String nombre) {
         this.nombre = nombre;
