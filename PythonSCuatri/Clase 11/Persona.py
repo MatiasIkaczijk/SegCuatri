@@ -17,6 +17,9 @@ class Persona:
     def edad(self, edad):
         self._edad = edad
     
+    def __str__(self): # sobre escribir los atributos encapsulados
+        return f"Persona: [ Nombre: {self._nombre} , Edad: {self._edad}]"
+    
 class Empleado(Persona): # clase hija de la clase persona
     def __init__(self, nombre, edad, sueldo):
         super().__init__(nombre, edad) # usamos las caract del padre
@@ -29,6 +32,9 @@ class Empleado(Persona): # clase hija de la clase persona
     @sueldo.setter
     def sueldo(self, sueldo):
         self._sueldo = sueldo
+    
+    def __str__(self):
+        return f" Empleado: [ Sueldo: {self._sueldo}] {super().__str__()}" # sobre escribimos el str de la clase padre
 
 Empleado1 = Empleado("Arturo", 40, 78900)
 print(Empleado1.nombre)
