@@ -10,21 +10,21 @@ public class matriz7x7 {
 
         // Llenamos matriz
         for(int i=0; i<7; i++){
-            for(int x=0;x<7;x++){
-                if ((i==x)){ // cuando sean igual indice asigna 1
-                    matrizA[i][x] = 1;
+            for(int j = 0; j < 7; j++){
+                if ((i == j)){ // cuando sean igual indice asigna 1
+                    matrizA[i][j] = 1;
                 }
                 else{
-                    matrizA[i][x] = 0;
+                    matrizA[i][j] = 0;
                 }
             }
         }
-        // NO ENCUENTRO LA FALLA EN ESTE EJ
-    }
-    System.out.println("Mostrando matriz completa: ");
-    for(int i = 0; i < 7; i ++){
-        for(int x=0; x<7;x++){
-            System.out.println(matrizA[i][x] + " ");
+        System.out.println("Mostrando matriz completa: ");
+        for(int i = 0; i < 7; i ++){
+            for(int j = 0; j < 7; j++){
+                System.out.println(matrizA[i][j] + " ");
+            }
+            System.out.println("");
         }
         System.out.println("");
     }
