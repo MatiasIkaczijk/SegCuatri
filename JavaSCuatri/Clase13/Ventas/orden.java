@@ -28,4 +28,17 @@ public class orden {
         }
     }
 
+    // iteramos los elementos ya cargados 
+
+    public double calcularTotal(){
+        double total = 0;
+        // recorremos el arreglo
+        for(int i = 0; i < this.contadorProducto; i++){
+           // Producto producto = this.productos[i];
+             // total += producto.getPrecio();
+             total += this.productos[i].getPrecio(); // recibe, y suma precio
+        }
+        return total;
+    }
+
 }
