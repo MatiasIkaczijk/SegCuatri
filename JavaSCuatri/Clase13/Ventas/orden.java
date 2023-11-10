@@ -41,4 +41,15 @@ public class orden {
         return total;
     }
 
+    // mostramos el detalle de todos los prod y total
+    public void mostrarOrden(){
+        System.out.println("Id Orden: " + idOrden);
+        double totalOrden = this.calcularTotal();
+        System.out.println("El total de la orden es: $" + totalOrden);
+        System.out.println(" Los productos de la orden son: " );
+        for(int i =0; i < contadorProducto; i++){
+            System.out.println(this.productos[i]);
+        }
+    }
+
 }
